@@ -1,0 +1,27 @@
+* {
+  outline: none;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+#hoverFade {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+#show:hover #hoverFade {
+  transition: all .5s ease;
+  visibility: visible;
+  padding: 8px;
+  opacity: 1;
+  height: 200px;
+  pointer-events: auto;
+}
+
